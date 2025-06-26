@@ -1,0 +1,11 @@
+
+<h3> Parent Component</h3>
+
+
+<input pInputText [(ngModel)]="parentMessage" placeholder="Type message to Child" />
+<p>Message from Child: <strong>{{ messageFromChild }}</strong></p>
+
+<app-child
+  [dataFromParent]="parentMessage"
+  (dataToParent)="receiveData($event)">
+</app-child>

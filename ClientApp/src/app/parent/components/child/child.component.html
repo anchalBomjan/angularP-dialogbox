@@ -1,0 +1,6 @@
+<h4>  child component</h4>
+
+<p>Data from Parent: <strong>{{ dataFromParent }}</strong></p>
+
+    <input pInputText [(ngModel)]="childMessage" placeholder="Type message to Parent" />
+    <button pButton type="button" label="Send to Parent" (click)="sendToParent()"></button>
